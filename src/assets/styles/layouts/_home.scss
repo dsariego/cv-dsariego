@@ -110,17 +110,17 @@ article {
 }
 .list {
   width: 100%;
-}
-.list li {
-  margin: 1rem 0;
-  padding: 1rem;
-  background-color: $pri;
-  border-radius: 1rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-  grid-template-rows: 2fr;
-  box-shadow: 3px 3px 3px $sha;
+  li {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: $pri;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-template-rows: 2fr;
+    box-shadow: 3px 3px 3px $sha;
+  }
 }
 
 /* Icon an text control into blocks */
@@ -176,13 +176,12 @@ article {
   height: fit-content;
   max-width: $full;
   margin: 0 auto;
-}
-
-// Control of text in footer
-.tag__foo p {
-  font-size: 0.8rem;
-  margin: 2rem 0 2rem 2rem;
-  color: $wh0;
+  // Control of text in footer
+  p {
+    font-size: 0.8rem;
+    margin: 2rem 0 2rem 2rem;
+    color: $wh0;
+  }
 }
 
 // Color from text of some paragraphs (presentation and timelines blocks)
@@ -192,33 +191,35 @@ article {
 }
 
 /* Soft design of H3 Heading elements */
-.headtitle h3 {
-  font-size: 1.6rem;
-  padding-top: 3.6rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-.headtitle h3:before {
-  background-color: $pri;
-  border-radius: 20px;
-  content: "";
-  display: block;
-  height: 4px;
-  width: 30%;
-  margin-bottom: 0.1rem;
-}
-.headtitle h3:after {
-  background-color: $pri;
-  border-radius: 20px;
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 4px;
-  width: 50%;
-  margin-bottom: -0.3rem;
+.headtitle {
+  h3 {
+    font-size: 1.6rem;
+    padding-top: 3.6rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  h3:before {
+    background-color: $pri;
+    border-radius: 20px;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 30%;
+    margin-bottom: 0.1rem;
+  }
+  h3:after {
+    background-color: $pri;
+    border-radius: 20px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    width: 50%;
+    margin-bottom: -0.3rem;
+  }
 }
 
 /* Progress bar percentages */

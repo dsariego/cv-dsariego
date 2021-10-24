@@ -33,10 +33,10 @@
     padding: 0 1rem;
     text-transform: unset;
     margin: 1rem 0;
-  }
-  li a {
-    text-decoration: none;
-    font-size: 1.1rem;
+    a {
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
   }
   li:hover a {
     text-decoration: underline;
@@ -53,12 +53,11 @@
 @media all and (min-width: 1200px) {
   li {
     padding: 0 2rem;
+    a {
+      text-decoration: none;
+      font-size: 1.3rem;
+    }
   }
-  li a {
-    text-decoration: none;
-    font-size: 1.3rem;
-  }
-
   /* Atricle List Element Display */
   ul.list {
     display: block;
@@ -121,10 +120,9 @@
     grid-column-start: 3;
     grid-column-end: 4;
     margin-left: -1rem;
-  }
-
-  .rightblock section {
-    margin-left: -1rem;
+    section {
+      margin-left: -1rem;
+    }
   }
 
   #bodyinfo section {
