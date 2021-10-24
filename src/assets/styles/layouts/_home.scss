@@ -223,17 +223,17 @@ article {
 
 /* Progress bar percentages */
 .progressbar--fif {
-  width: percentage(0.5);
+  width: math.percentage(0.5);
 }
 .progressbar--six {
-  width: percentage(0.6);
+  width: math.percentage(0.6);
 }
 .progressbar--sev {
-  width: percentage(0.7);
+  width: math.percentage(0.7);
 }
 .progressbar--eig {
-  width: percentage(0.8);
+  width: math.percentage(0.8);
 }
 .progressbar--nin {
-  width: percentage(0.9);
+  width: math.percentage(0.9);
 }
