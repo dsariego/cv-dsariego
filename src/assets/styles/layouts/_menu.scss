@@ -1,0 +1,62 @@
+/* MOBILE TOGGLE */
+nav {
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 250ms height ease-in-out;
+}
+
+li {
+  display: block;
+  text-align: right;
+  padding: 1.2rem 15px;
+  text-transform: uppercase;
+}
+li:first-child {
+  margin-top: 1rem;
+}
+li:last-child {
+  margin-bottom: 1rem;
+}
+li a {
+  font-size: 1.4rem;
+}
+
+// Wrapper of menu block
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: $full;
+  margin: 0 auto;
+  padding-left: 0.5em;
+}
+.wrapper h1 {
+  //color: $wh0;
+  font-size: 2rem;
+  padding: 0.3em 0 0.3em 0;
+}
+
+// Configurate a icon menu
+#nav__toggle {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+#nav__toggle span {
+  font-size: 2.5em;
+  transition: 300ms all ease;
+}
+#nav__toggle:hover span {
+  opacity: 0.6;
+}
+
+// To display or not the main menu if it's open
+.open {
+  height: fit-content;
+}
+.hidden {
+  display: none;
+}

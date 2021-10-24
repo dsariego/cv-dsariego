@@ -1,0 +1,139 @@
+/* MEDIA QUERIES */
+
+/* For devices with screen resolution of at least 801px */
+@media all and (min-width: 800px) {
+  /* Responsive timeline on screens */
+
+  /* Atricle List Element Display */
+  ul.list {
+    padding: 0 0 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+  .iconlist__list {
+    display: block;
+    font-size: 3rem;
+  }
+  .label__list {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .textdata__list {
+    font-style: italic;
+  }
+
+  /* Show elements of main menu inline */
+  .wrapper {
+    flex-direction: column;
+    align-items: space-between;
+  }
+  li {
+    display: inline-block;
+    padding: 0 1rem;
+    text-transform: unset;
+    margin: 1rem 0;
+  }
+  li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  li:hover a {
+    text-decoration: underline;
+  }
+  #nav__toggle {
+    display: none;
+  }
+  nav {
+    height: auto;
+  }
+}
+
+/* Mobile First Design */
+@media all and (min-width: 1200px) {
+  li {
+    padding: 0 2rem;
+  }
+  li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+
+  /* Atricle List Element Display */
+  ul.list {
+    display: block;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0.7rem;
+    grid-template-rows: 2fr;
+    margin-left: -1rem;
+  }
+  .iconlist__list {
+    font-size: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .label__list {
+    font-size: 0.8rem;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .textdata__list {
+    font-size: 0.8rem;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  .presentation {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .contact {
+    margin-top: 3.6rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  #bodyinfo {
+    max-width: $full;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: -1rem;
+  }
+
+  .leftblock {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .rightblock {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-left: -1rem;
+  }
+
+  .rightblock section {
+    margin-left: -1rem;
+  }
+
+  #bodyinfo section {
+    border: 0;
+  }
+
+  /* Style to timeline label */
+  .rightblock .labelskill {
+    font-size: 0.8em;
+    margin-left: -1rem;
+  }
+}

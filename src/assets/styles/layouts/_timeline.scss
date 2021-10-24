@@ -1,0 +1,112 @@
+/* TIMELINE */
+/* Actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: $full;
+  margin: 0 auto;
+}
+
+/* Actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  background-color: $blk;
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 90%;
+}
+.container2 {
+  padding-top: 2rem;
+  margin: 0.8rem 40px;
+  position: relative;
+  background-color: inherit;
+  z-index: 2;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: $wh0;
+  border: 4px solid $pri;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 30px;
+}
+
+/* Place the container to the right */
+.right {
+  left: 10%;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid $pri;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent $pri transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 1rem 1.5rem;
+  background-color: $pri;
+  position: relative;
+  border-radius: 0.5rem;
+  width: fit-content;
+  box-shadow: 3px 3px 3px $sha;
+}
+
+/* Design to graphic base */
+.progressbar {
+  background-color: $sec;
+  width: 90%;
+  border-radius: 1rem;
+  margin: -1rem 0 1.6rem 0;
+  box-shadow: 3px 3px 3px $sha;
+}
+/* Top layer to graphic */
+.skill__progressbar {
+  background-color: $pri;
+  color: $wh0;
+  padding: 0.3rem;
+  text-align: right;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+}
+/* Style to timeline label */
+.label__barpro {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+  font-size: 1.2em;
+}

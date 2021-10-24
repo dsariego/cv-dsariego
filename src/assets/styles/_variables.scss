@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:map";
 
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -10,3 +11,31 @@ $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 $mqMinWidth: 420px;
+
+$pri: #163172;
+$blk: #1e56a0;
+$sec: color.scale($blk, $lightness: 45%);
+$bck: color.scale($blk, $lightness: 90%);
+//$sec: #d6e4f0;
+$wh0: #f6f6f6;
+$bl1: #333;
+$sha: #aaa;
+
+$full: 1400px;
+$min: 400px;
+$dev: 800px;
+$med: 1200px;
+
+// Dimensions pattern
+$dot-size: 1px;
+$dot-space: 20px;
+
+// Percentage bars
+$per: (
+  "5": 0.5,
+  "6": 0.6,
+  "7": 0.7,
+  "8": 0.8,
+  "9": 0.9,
+);
+$val: percentage(map.get($per, "5"));

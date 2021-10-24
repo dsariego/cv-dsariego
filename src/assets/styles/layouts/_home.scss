@@ -1,50 +1,239 @@
+/* METHODOLOGY BEN */
+/* ALL ELEMENTS IN FLOW */
 * {
   box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  height: 100vh;
   margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "Open Sans", sans-serif;
+  color: $bl1;
+  transition: 250ms height ease-in-out;
 }
 
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
+/* FIRST ORDER LABELS */
+// Header Section
+.head {
+  background: rgba($color: $sec, $alpha: 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+// Footer Section
+.foo {
+  background-color: $blk;
+  height: fit-content;
+}
+
+.foo--color {
+  color: $wh0;
+}
+// Nav Element
+nav {
+  margin: 0 auto;
+}
+
+// Texture Background in Main Section
+main {
+  padding: 0rem;
+  background: linear-gradient(
+        90deg,
+        $bck ($dot-space - $dot-size),
+        transparent 90%
+      )
+      center,
+    linear-gradient($bck ($dot-space - $dot-size), transparent 1%) center, $blk;
+  background-size: $dot-space $dot-space;
+}
+
+// Paragraph Element
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6rem;
+}
+
+// Hipertext Element and Pseuco-class
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.6;
+}
+
+// Section Heading Elements
+h2 {
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: $wh0;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: -1px;
+  text-align: left;
+}
+h3 {
+  position: relative;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  color: $blk;
+  width: fit-content;
+  margin-bottom: 2rem;
+  padding: 0.8rem 1.6rem 0 0;
+}
+h4 {
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: $wh0;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+// Unorderes List Element and List Items to a horizontal position
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+// Generic Section Element
+section {
+  border-bottom: 1.5rem solid $sec;
+  padding-bottom: 1rem;
+}
+
+// Article Contents Element in Main
+article {
+  padding: 0 1.5rem;
+  max-width: $full;
+  margin: 0 auto;
+}
+.list {
+  width: 100%;
+}
+.list li {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: $pri;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  grid-template-rows: 2fr;
+  box-shadow: 3px 3px 3px $sha;
+}
+
+/* Icon an text control into blocks */
+.iconlist__list {
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  font-size: 3rem;
+  color: $wh0;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.label__list {
+  text-align: left;
+  font-weight: bold;
+  color: $wh0;
+  text-transform: uppercase;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+}
+.textdata__list {
+  text-align: left;
+  font-style: italic;
+  color: $bck;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
 }
 
-.uoc-logo {
+// Container of Skills
+.barpro {
+  margin-left: 2rem;
+}
+
+// Presentation Text Block
+.wrappercab {
+  width: 100%;
+  background-color: $blk;
+  border-bottom: 1rem solid $sec;
+}
+
+.tag__wrappercab {
+  padding: 3.5rem 1rem 2rem;
+  margin: 0 auto;
+  max-width: $full;
+  height: fit-content;
+}
+
+// Container of footer content
+.tag__foo {
+  padding: 2rem 0rem;
+  height: fit-content;
+  max-width: $full;
+  margin: 0 auto;
+}
+
+// Control of text in footer
+.tag__foo p {
+  font-size: 0.8rem;
+  margin: 2rem 0 2rem 2rem;
+  color: $wh0;
+}
+
+// Color from text of some paragraphs (presentation and timelines blocks)
+.tag__wrappercab p,
+.content p {
+  color: $wh0;
+}
+
+/* Soft design of H3 Heading elements */
+.headtitle h3 {
+  font-size: 1.6rem;
+  padding-top: 3.6rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.headtitle h3:before {
+  background-color: $pri;
+  border-radius: 20px;
+  content: "";
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
-
-  @media (min-width: $mqMinWidth) {
-    max-width: 350px;
-  }
+  height: 4px;
+  width: 30%;
+  margin-bottom: 0.1rem;
+}
+.headtitle h3:after {
+  background-color: $pri;
+  border-radius: 20px;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  width: 50%;
+  margin-bottom: -0.3rem;
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
-
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
-  }
+/* Progress bar percentages */
+.progressbar--fif {
+  width: percentage(0.5);
+}
+.progressbar--six {
+  width: percentage(0.6);
+}
+.progressbar--sev {
+  width: percentage(0.7);
+}
+.progressbar--eig {
+  width: percentage(0.8);
+}
+.progressbar--nin {
+  width: percentage(0.9);
 }

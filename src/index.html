@@ -1,23 +1,468 @@
+<!-- Web page develop by Daniel Sariego Alvarez, UOC 2021-->
+
 <!DOCTYPE html>
 
-<html>
+<html lang="es-ES">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <!-- Info SEO Descriptor -->
+    <meta name="description" content="Curriculum Vitae de Daniel Sariego Álvarez">
+    <meta name="author" content="Daniel Sariego Álvarez">
+    <!-- Mobile specific meta -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Favicons 
+    <link rel="shortcut icon" href="img/favicon.ico"> -->
+    <!-- SASS -->
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>CV Daniel Sariego Alvarez</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <a name="top"></a>
+
+    <!-- Header web -->
+    <header class="head"> 
+      
+      <div class="wrapper" id="initial">
+        <!-- Logo -->
+        <a href="#top" title="Inicio de la Web"><h1>CURRICULUM VITAE</h1></a>
+          <div id="nav__toggle">            
+            <span id="navClosed" class="fas fa-align-justify navIcon" alt="hamburger menu"></span>
+            <span id="navOpen" class="fas fa-times navIcon hidden" alt="close hamburger"></span>
+          </div>
+        <!-- Navigation Main -->
+        <nav> 
+          <ul>
+            <li><a href="#about" title=""><span class="fas fa-address-card"> Sobre Mí</span></a></li>
+            <li><a href="#experience" title=""><span class="fas fa-briefcase"> Experiencia</span></a></li>
+            <li><a href="#instruction" title=""><span class="fas fa-graduation-cap"> Formación</span></a></li>
+            <li><a href="#knowledge" title=""><span class="fas fa-brain"> Conocimientos</span></a></li>
+            <li><a href="#otherdata" title=""><span class="fas fa-info-circle"> Otros Datos</span></a></li>
+          </ul>         
+        </nav>
+      </div>
+
+    </header>
+
+    <!-- Main web -->
+    <main id="initial">
+
+      <!-- Presentation Web -->
+      <div class="wrappercab">
+        <div class="tag__wrappercab">
+          <div>
+            <h2>¡Sean Bienvenidos!<br />Mi nombre es Daniel Sariego ÁLvarez</h2>
+            <p>Soy un creador Multimedia con conocimientos avanzados de desarrollo Full-Stack y diseño web, cuento con una experiencia prolongada en diferentes sectores y gran volutad para afrontar nuevos retos.</p>
+          </div>
+          <!-- <picture>
+            <source media="(max-width: 799px)" srcset="image-face.jpg">
+            <source media="(min-width: 800px)" srcset="image-profile.jpg">
+            <img src="image-profile.jpg" alt="Imagen de perfil">
+          </picture> -->
+        </div>    
+      </div>
+
+      <!-- Different web sections in Main -->
+      <section>
+        <article id="about">
+          <div class="presentation">
+            <div class="headtitle"><h3>Sobre Mí</h3></div>
+            <p>Oriundo de Madrid, desde los 15 años he desarrollado mi formación y vida laboral en Asturias. Tengo un perfil laboral técnico tanto en el mundo Audiovisual como Informático. Actualmente soy desarrollador full-stack, formo parte de un grupo de trabajo en tecnología <em>Vlocity</em> (construido de forma nativa en la plataforma <em>Salesforce</em>). No pierdo el contacto con la formación, ya que me encuentro ultimando los estudios correspondientes al <em>Máster Universitario en Desarrollo de sitios y Aplicaciones Web</em>. Además, cuento con una dilatada experiencia laboral en el sector técnico audiovisual.  Disfruto del trabajo colaborativo, superar nuevos retos y aprender las nuevas tecnologías.</p>
+          </div>
+          <div class="contact">
+            <ul class="list">
+              
+              <li>
+                <i class="fas fa-mobile-alt iconlist__list"></i>
+                <div class="label__list">Teléfono</div>
+                <div class="textdata__list">(+34) 600 000 302</div>
+              </li>
+              <li>
+                <i class="fas fa-envelope iconlist__list"></i>
+                <div class="label__list">Email</div>
+                <div class="textdata__list">danielsariego82@gmail.com</div>
+              </li>
+              <li>
+                <i class="fas fa-globe-europe iconlist__list"></i>
+                <div class="label__list">Web</div>
+                <div class="textdata__list">https://vimeo.com/user44163501</div>
+              </li>
+              <li>
+                <i class="fas fa-home iconlist__list"></i>
+                <div class="label__list">Dirección</div>
+                <div class="textdata__list">Oviedo, Asturias (33013)</div>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <div id="bodyinfo">
+
+        <div class="leftblock">
+          <section>
+            <article id="experience">
+              <div class="headtitle"><h3>Experiencia</h3></div>
+              <div class="timeline">
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2021</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Desarrollador (Desde Marzo 2021)</div><br />
+                    <p>Desarrollador Informático Full-Stack con tecnología Salesforce, así como con el Framework Vlocity, tecnología Apex o Lighting Web Components.</p>
+                    <div class="textdata__list">Tecnológica Ecosistemas, S.A.U. - Madrid</div>
+                  </div>
+                </div>
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2018</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Operador Técnico (Julio 2018 - Marzo 2021)</div><br />
+                    <p>Operador en los departamentos de Control Central, Continuidad y Retransmisiones vía satélite, para la RTPA (Radio Televisión del Principado de Asturias).</p>
+                    <div class="textdata__list">Videoreport, Grupo Mediapro - Madrid</div>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Técnico Audiovisual (Febrero 2018)</div><br />
+                    <p>Periodo de prácticas (80 horas) realizando las funciones de edición de video, mezclador y operador de VTR.</p>
+                    <div class="textdata__list">Proima-Zebrastur S.L. - Asturias</div>
+                  </div>
+                </div>
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2017</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Operador Agroecológico (Abril 2017 - Junio 2017)</div><br />
+                    <p>Contrato en prácticas en la explotación ecológica realizando tareas de mantenimiento y plantación.</p>
+                    <div class="textdata__list">Explotación de Santiago Pérez - Pruvia (Asturias)</div>
+                  </div>
+                </div>
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2007</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Operador Técnico (Febreo 2007 - Abril 2015)</div><br />
+                    <p>Operador de unidades móviles para conexión por satélite, realizando
+                      las siguientes funciones: manejo, instalación y mantenimiento de equipos, función de producción, conductor y trabajo de campo.</p>
+                    <div class="textdata__list">Grupo Secuoya · T.S.A. · Autónomo - Madrid</div>
+                  </div>
+                </div>
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2006</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Técnico Audiovisual (Junio 2004 - Febrero 2004)</div><br />
+                    <p>Auxiliar de montaje, operador de VTR y regidor, realizando las funciones de manejo técnico de equipos de video/audio e instalación.</p>
+                    <div class="textdata__list">Sport and News · Asturmedia - Asturias</div>
+                  </div>
+                </div>
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2004</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Técnico de sonido (Abril 2004 - Junio 2004)</div><br />
+                    <p>Contrato en prácticas realizando tareas de sonorización en directo, montaje de luces para espectáculos y mantenimiento de equipos técnicos.</p>
+                    <div class="textdata__list">Sonimedia S.L. - Oviedo (Asturias)</div>
+                  </div>
+                </div>
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2002</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Operador Telecomunicaciones (Abril 2002 - Junio 2002)</div><br />
+                    <p>Contrato en prácticas realizando tareas de soluciones de telecomunicaciones, telefonía y redes de datos.</p>
+                    <div class="textdata__list">Inatel S.L. - Llanera (Asturias)</div>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+          </section>
+
+          <section>
+            <article id="instruction">
+              <div class="headtitle"><h3>Formación</h3></div>
+              <div class="timeline">
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2020</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Master Universitario en Desarrollo de sitios y aplicaciones web (Desde el 2020)</div><br />
+                    <div class="textdata__list">UOC (Barcelona)</div>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Grado de Multimedia (Periodo 2015 - 2020)</div><br />
+                    <div class="textdata__list">UOC (Barcelona)</div>
+                  </div>
+                </div>
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2018</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Montaje y postproducción (510 horas)</div><br />
+                    <div class="textdata__list">CIFP Cislan (Asturias)</div>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Asistencia a la realización en televisión (530 horas)</div><br />
+                    <div class="textdata__list">CIFP Cislan (Asturias)</div>
+                  </div>
+                </div>
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2017</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">CFGM: Producción Agroecológica (Periodo 2015 - 2017)</div><br />
+                    <div class="textdata__list">IES Luces, Colunga (Asturias)</div>
+                  </div>
+                </div>
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2006</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">CFGS: Programación y gestión en sistemas informáticos (Periodo 2004 - 2006)</div><br />
+                    <div class="textdata__list">IES Lugones (Asturias)</div>
+                  </div>
+                </div>
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2004</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">CFGS: Técnico de sonido (Periodo 2002 - 2004)</div><br />
+                    <div class="textdata__list">CIDISI (Asturias)</div>
+                  </div>
+                </div>
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2002</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">CFGS: Telecomunicaciones (Periodo 2000-2002)</div><br />
+                    <div class="textdata__list">SERESCO (Asturias)</div>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Retoque digital y escaneado de imágenes (200 horas)</div><br />
+                    <div class="textdata__list">SERESCO (Asturias)</div>
+                  </div>
+                </div>
+
+                <div class="container2 left">
+                  <div class="content">
+                    <h4>2000</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <div class="label__list">Control-Grabación en Radio (470 horas)</div><br />
+                    <div class="textdata__list">AYTO. Oviedo (Asturias)</div>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+          </section>
+        </div>
+      
+        <div class="rightblock">
+          <section>
+            <article id="knowledge">
+              <div class="headtitle"><h3>Conocimientos</h3></div>
+              <div class="barpro">
+
+                <p class="label__barpro">Diseño Web (HTML, CSS)</p>
+                <div class="progressbar">
+                  <div class="skill__progressbar progressbar--eig">80%</div>
+                </div>
+                
+                <p class="label__barpro">JavaScript / TypeScript</p>
+                <div class="progressbar">
+                  <div class="skill__progressbar progressbar--six">60%</div>
+                </div>
+
+                <p class="label__barpro">Sistemas Reactivos (Angular, Vue...)</p>
+                <div class="progressbar">
+                  <div class="skill__progressbar progressbar--fif">50%</div>
+                </div>
+              
+                <p class="label__barpro">Soluciones integradas CRM (Salesforce, Drupal...)</p>
+                <div class="progressbar">
+                  <div class="skill__progressbar progressbar--sev">70%</div>
+                </div>  
+
+                <p class="label__barpro">Soluciones Back-end (PHP, MySQL, Apache...)</p>
+                <div class="progressbar">
+                  <div class="skill__progressbar progressbar--fif">50%</div>
+                </div>    
+
+                <p class="label__barpro">Suite Adobe (Edición, animación e ilustración)</p>
+                <div class="progressbar">
+                  <div class="skill__progressbar progressbar--nin">90%</div>
+                </div>  
+
+                <p class="label__barpro">Diseño entornos 3D (Maya, SketchUp, Blender)</p>
+                <div class="progressbar">
+                  <div class="skill__progressbar progressbar--six">60%</div>
+                </div>  
+
+                <p class="label__barpro">Herramientas de Ofimática</p>
+                <div class="progressbar">
+                  <div class="skill__progressbar progressbar--eig">80%</div>
+                </div>
+
+                <p class="label__barpro">Herramientas Colaborativas en la Nube</p>
+                <div class="progressbar">
+                  <div class="skill__progressbar progressbar--sev">70%</div>
+                </div>
+
+                <p class="label__barpro">Soporte Técnico Audiovisual</p>
+                <div class="progressbar">
+                  <div class="skill__progressbar progressbar--nin">90%</div>
+                </div>
+
+              </div>
+            </article>
+          </section>
+
+          <section>
+            <article id="otherdata">
+              <div class="headtitle"><h3>Otros Datos</h3></div>
+              <ul class="list">
+                <li>
+                  <i class="fas fa-language iconlist__list"></i>
+                  <div class="label__list">Idioma: Ingles</div>
+                  <div class="textdata__list">Nivel Medio (B2)</div>
+                </li>
+                <!-- <li>
+                  <i class="fas fa-graduation-cap iconlist__list"></i>
+                  <div class="label__list">Montaje y postproducción</div>
+                  <div class="textdata__list">(510h) CIFP CISLAN 2018</div>
+                </li> -->
+                <li>
+                  <i class="fas fa-id-card-alt iconlist__list"></i>
+                  <div class="label__list">Carné de Manipulador de Productos Fitosanitarios</div>
+                  <div class="textdata__list">Nivel Cualificado 2018</div>
+                </li>
+                <!-- <li>
+                  <i class="fas fa-graduation-cap iconlist__list"></i>
+                  <div class="label__list">Asistencia a la realización en Televisión</div>
+                  <div class="textdata__list">(530h) CIFP CISLAN 2018</div>
+                </li> 
+                <li>
+                  <i class="fas fa-user-graduate iconlist__list"></i>
+                  <div class="label__list">GFGM: Producción Agroecológica</div>
+                  <div class="textdata__list">2015 - 2017 | LUCES (COLUNGA)</div>
+                </li> -->
+                <li>
+                  <i class="fas fa-car iconlist__list"></i>
+                  <div class="label__list">Coche propio, disponibilidad para viajar</div>
+                  <div class="textdata__list">Turismo</div>
+                </li>
+                <li>
+                  <i class="fas fa-address-card iconlist__list"></i>
+                  <div class="label__list">Carnet de conducir clase B</div>
+                  <div class="textdata__list">Desde 2006</div>
+                </li>
+                <!-- <li>
+                  <i class="fas fa-graduation-cap iconlist__list"></i>
+                  <div class="label__list">Control-grabación de radio</div>
+                  <div class="textdata__list">(470h) AYTO. OVIEDO 2002</div>
+                </li>
+                <li>
+                  <i class="fas fa-graduation-cap iconlist__list"></i>
+                  <div class="label__list">Retoque digital y escaneado de imágenes</div>
+                  <div class="textdata__list">(200h) SERESCO 2002</div>
+                </li> -->
+                <li>
+                  <i class="fas fa-microphone iconlist__list"></i>
+                  <div class="label__list">Técnico/Locutor de radio</div>
+                  <div class="textdata__list">Preiodo 1999 - 2003</div>
+                </li>
+                <li>
+                  <i class="fas fa-birthday-cake iconlist__list"></i>
+                  <div class="label__list">Nacido en la Comunidad de Madrid</div>
+                  <div class="textdata__list">Agosto 1982</div>
+                </li>
+              </ul>
+            </article>
+          </section>
+        </div>
+
+      </div>
+    </main>  
+    
+    <!-- Footer Web -->
+    <footer class="foo">
+      <div class="tag__foo">
+        <ul>
+          <li><a href="#top" title="Inicio de la Web"><span class="fas fa-caret-square-up foo--color"> Inicio</span></a></li>
+          <li><a href="#about" title=""><span class="fas fa-address-card foo--color"> Sobre Mí</span></a></li>
+          <li><a href="#experience" title=""><span class="fas fa-briefcase foo--color"> Experiencia</span></a></li>
+          <li><a href="#instruction" title=""><span class="fas fa-graduation-cap foo--color"> Formación</span></a></li>
+          <li><a href="#knowledge" title=""><span class="fas fa-brain foo--color"> Conocimientos</span></a></li>
+          <li><a href="#otherdata" title=""><span class="fas fa-info-circle foo--color"> Otros Datos</span></a></li>
+        </ul>         
+        <p>	
+          &#169; 2021 Daniel Sariego Alvarez. Contacto desde danieldariego82@gmail.com</p>
+      </div>
+    </footer>
+    
+    <!-- Main Script Web -->
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
