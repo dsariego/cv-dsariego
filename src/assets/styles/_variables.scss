@@ -18,3 +18,8 @@ $med: 1200px;
 // Dimensions pattern
 $dot-size: 1px;
 $dot-space: 20px;
+
+// function to calculate the sizes of media queries in proportion a number
+@function grid-width($n) {
+  @return $n * $min;
+}

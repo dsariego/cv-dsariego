@@ -1,7 +1,7 @@
 /* MEDIA QUERIES */
 
 /* For devices with screen resolution of at least 801px */
-@media all and (min-width: 800px) {
+@media all and (min-width: grid-width(2)) {
   /* Responsive timeline on screens */
 
   /* Atricle List Element Display */
@@ -50,7 +50,7 @@
 }
 
 /* Mobile First Design */
-@media all and (min-width: 1200px) {
+@media all and (min-width: grid-width(3)) {
   li {
     padding: 0 2rem;
     a {
